@@ -27,11 +27,11 @@ public class Threads {
 		@Override
 		public void run() {
 			int index = 0;
-			while(index != 10){
+			while(index != 5){
 				
 				index++;
 				try {
-					Thread.sleep(1000L);
+					Thread.sleep(1000 *index);
 					System.out.println("tarefa: "+this.tarefa+" #"+index);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
